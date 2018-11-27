@@ -1,0 +1,24 @@
+micronaut:
+  executors:
+    io:
+      type: fixed
+      nThreads: 5
+      n-threads: 5
+      number-of-threads: 5
+  application:
+    name: mn-schedulers
+  server:
+    maxRequestSize: 1MB
+    host: localhost
+    netty:
+      maxHeaderSize: 500KB
+      worker:
+        threads: 1
+      parent:
+        threads: 1
+      childOptions:
+        autoRead: true
+consul:
+  client:
+    registration:
+      enabled: false

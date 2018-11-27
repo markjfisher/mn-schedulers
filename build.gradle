@@ -1,0 +1,6 @@
+wrapper {
+	gradleVersion = '4.10.2'
+	jarFile = "${rootDir}/wrapper/wrapper.jar"
+}
+
+defaultTasks ":app:clean", ":app:build"
