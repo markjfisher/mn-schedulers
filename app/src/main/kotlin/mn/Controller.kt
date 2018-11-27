@@ -10,7 +10,7 @@ import java.lang.Exception
 private val logger = KotlinLogging.logger {}
 
 @Controller("/api")
-class ProductCatalogueController {
+class Controller {
 
     @Get("/{id}")
     fun getId(id: String): Maybe<String> {
